@@ -133,10 +133,16 @@ let array8 =  [-15, -100, -25, 10, -36].some((item) => item > 0);
 console.log(array8);
 
 
-//დავალება #18                                                      ???
-let element1 = '12345';
+//დავალება #18                                                      
+let element = '12345';
+let result1 = element.split("");
 
-console.log(element1.split(""))
+sum = 0;
+for(let i of result1){
+    sum += Number(i);
+}
+
+console.log(sum);
 
 
 //დავალება #19                                                        ???

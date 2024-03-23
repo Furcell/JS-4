@@ -7,11 +7,16 @@
 let array = [14, 150, 'css', null, 'javascript', 25];
 
 let newArray = array.map( (item) => {
-    if (typeof item === 'number'){
-        return item * item;
-    } else if (typeof item === 'string'){
-        return item.toUpperCase();
-    } return item;
+
+    // if (typeof item === 'number'){         
+    //     return item * item;
+    // } else if (typeof item === 'string'){
+    //     return item.toUpperCase();
+    // } return item;
+
+    let condition = (typeof item === 'number') ? item * item : (typeof item === 'string') ? item.toUpperCase() : item;
+    return condition;
+
 })
 
 console.log(newArray);
@@ -32,8 +37,17 @@ let newString = fnstring1("hello")
 console.log(newString.length);
 
 
-//დავალება #4                                                          ???
+//დავალება #4                                                        
+let userAnswer = prompt('საქართველოს დედაქალაქი');
+let correctAnswer = 'თბილისი';
 
+let lowAnswer = userAnswer.toLowerCase();
+
+if (lowAnswer === correctAnswer) {
+    console.log('სწორია');
+} else {
+    console.log('არასწორია');
+}
 
 
 //დავალება #5

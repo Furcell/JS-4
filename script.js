@@ -106,9 +106,12 @@ array5.splice(2,1,"three")
 console.log(array5);
 
 
-//დავალება #12                                                    ???
+//დავალება #12                                                    
 let array6 =['hello1', 14,24, 'hello2']                          
 
+let newArray6 = array6.filter( (item) => typeof item === 'number' )
+
+console.log(newArray6);
 
 
 //დავალება #13

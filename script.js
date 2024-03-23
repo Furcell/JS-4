@@ -3,16 +3,18 @@
 // HOMEWORK JS-4
 
 
-// დავალება #1                                                         ???
+// დავალება #1                                                         
 let array = [14, 150, 'css', null, 'javascript', 25];
 
-let newNumbers = array.map(function fnarray(el) {
-    if (typeof el == 'number') {
-        return (el * 2);
-    } 
+let newArray = array.map( (item) => {
+    if (typeof item === 'number'){
+        return item * item;
+    } else if (typeof item === 'string'){
+        return item.toUpperCase();
+    } return item;
 })
 
-console.log(newResult);
+console.log(newArray);
 
 
 //დავალება #2

@@ -173,14 +173,14 @@ for(let i of result1){
 console.log(sum);
 
 
-//დავალება #19                                                        ???
-let nestedArray =[[0,1], [2,3], [4,5]].reduce((accumulator,currentValue) =>  {
-    return accumulator.concat(currentValue);
-}, []);
+//დავალება #19                                                        
+let nums = [12,15,17,9];
 
+let sums = nums.reduce(function(accumalator,currentValue){
+    return accumalator + currentValue;
+}, 0)
 
-console.log(nestedArray);
-
+console.log(sums);
 
 
  

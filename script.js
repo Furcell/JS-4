@@ -143,8 +143,17 @@ let resultFilter1 = words.filter(function(x){
 console.log(resultFilter1);
 
 
-//დავალება #16                                                     ???
+//დავალება #16                                                     
 let link = 'https://google.com';
+
+function checkLink(item) {
+    if (item.indexOf('https://') == -1){
+        console.log('არ მოიცავს');
+    } else {
+        console.log('მოიცავს');
+    }
+}
+checkLink(link);
 
 
 //დავალება #17
